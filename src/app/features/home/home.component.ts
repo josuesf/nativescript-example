@@ -6,7 +6,7 @@ import { FlickService } from "~/app/core";
 @Component({
   moduleId: module.id,
   selector: "ns-home",
-  templateUrl: "home.component.html",
+  templateUrl: "home.component.html"
 })
 export class HomeComponent {
   flicks = this.flickService.getFlicks();
@@ -17,6 +17,13 @@ export class HomeComponent {
   ) {}
 
   onFlickTap(args: ItemEventData): void {
-    this.routerExtensions.navigate(["details", this.flicks[args.index].id]);
+    console.log('Entro aqui',this.flicks[args.index].id );
+    try {
+      this.routerExtensions.navigate(["details", this.flicks[args.index].id]);
+    } catch (error) {
+      console.log('error routing', error);
+      
+    }
+    
   }
 }
