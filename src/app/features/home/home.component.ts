@@ -6,7 +6,7 @@ import { FlickService } from "~/app/core";
 @Component({
   moduleId: module.id,
   selector: "ns-home",
-  templateUrl: "home.component.html"
+  templateUrl: "home.component.html",
 })
 export class HomeComponent {
   flicks = this.flickService.getFlicks();

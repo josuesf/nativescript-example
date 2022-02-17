@@ -44,7 +44,7 @@ export class FlickService {
       id: 2,
       genre: 'Musical',
       title: 'Beetlejuice',
-      image: '/assets/beetlejuicemusical.png',
+      image: '~/assets/beetlejuicemusical.png',
       url: 'https://nativescript.org/images/ngconf/beetlejuice.mov',
       description: `A deceased couple looks for help from a devious bio-exorcist to handle their haunted house.`,
       details: [
@@ -74,7 +74,7 @@ export class FlickService {
       id: 3,
       genre: 'Musical',
       title: 'Anastasia',
-      image: '/assets/anastasia.png',
+      image: '~/assets/anastasia.png',
       url: 'https://nativescript.org/images/ngconf/anastasia.mov',
       description: `The legend of Grand Duchess Anastasia Nikolaevna of Russia.`,
       details: [
