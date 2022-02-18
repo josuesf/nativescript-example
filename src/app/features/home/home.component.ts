@@ -17,7 +17,6 @@ export class HomeComponent {
   ) {}
 
   onFlickTap(args: ItemEventData): void {
-    console.log('Entro aqui',this.flicks[args.index].id );
     try {
       this.routerExtensions.navigate(["details", this.flicks[args.index].id]);
     } catch (error) {
